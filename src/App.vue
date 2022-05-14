@@ -1,16 +1,17 @@
 <template>
   <div id="app">
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    
     <HeaderSite/>
 
     <MainSite/>
 
     <FooterSite/>
+    
   </div>
 </template>
 
 <script>
-/* import HelloWorld from './components/HelloWorld.vue' */
+
 import HeaderSite from './components/HeaderComponents/HeaderSite.vue'
 import MainSite from './components/MainComponents/MainSite.vue'
 import FooterSite from './components/FooterComponents/FooterSite.vue'
@@ -18,7 +19,6 @@ import FooterSite from './components/FooterComponents/FooterSite.vue'
 export default {
   name: 'App',
   components: {
-    /* HelloWorld, */
     HeaderSite,
     MainSite,
     FooterSite

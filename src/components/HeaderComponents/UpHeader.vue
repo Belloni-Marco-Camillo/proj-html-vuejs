@@ -1,6 +1,6 @@
 <template>
     <div id="UpHeader">
-        <div class="d-flex container justify-content-between align-items-center" >
+        <div class="d-flex container-upheader container justify-content-between align-items-center" >
             <div class="d-flex">
 
                 <div 
@@ -19,7 +19,7 @@
                 <div
                 v-for="(social, index) in SocialIcon" 
                 :key="index"
-                class="mx-3">{{social.item}}</div>
+                class="mx-3"><img :src="social.Image"></div>
 
             </div>
 
@@ -29,7 +29,6 @@
 </template>
 
 <script>
-
 
 export default {
     name: "UpHeader",
@@ -55,35 +54,42 @@ export default {
             ],
             SocialIcon:[
                 {
-                    item:"facebook",
+                    Image:require("@/./assets/img/icon/facebook.svg"),
                     href:"#"
                 },
                 {
-                    item:"twitter",
+                    Image:require("@/./assets/img/icon/twitter.svg"),
                     href:"#"
                 },
                 {
-                    item:"youtube",
+                    Image:require("@/./assets/img/icon/youtube.svg"),
                     href:"#"
                 },
                  {
-                    item:"instagram",
+                    Image:require("@/./assets/img/icon/instagram.svg"),
                     href:"#"
                 },
-            ]
+            ],
         };
+        
     },
 }
 </script>
 
 <style lang="scss">
+
 #UpHeader{
+    .container-upheader{
+        height: 100%;
+    }
     height: 36px;
     background-color: #ffab0b;
     a{
         text-decoration: none;
         color: white;
-
+    }
+    img{
+        height: 20px;
     }
 }
 </style>

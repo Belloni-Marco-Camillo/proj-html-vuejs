@@ -23,7 +23,7 @@ export default {
 <style lang="scss">
 #JoingOver{
     height: 290px;
-    background-color: #2e3341;
+    background-color: #333C4E;
     color: white;
     span{
         color:#ffab0b;

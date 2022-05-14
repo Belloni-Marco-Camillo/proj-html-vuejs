@@ -12,7 +12,7 @@
                     :key="index"
                     class="news-card col-3"
                     >
-                    <img class="img-fluid" src="./../../assets/img/not-found-img.jpg" alt="img not found">
+                    <img :src="post.img" class="img-fluid">
                     <div class="title-card text-start"><strong>{{post.title}}</strong></div>
                     <div class="meta d-flex">
                         <div class="pruducer text-start">by {{post.producer}} </div><span>&nbsp; &nbsp;</span>
@@ -38,12 +38,12 @@ export default {
 
     data() {
         return {
-            LastPosts:[],
             posts: [
                 {
                     title: "What do successful grads think you should study?",
                     href: "#",
                     producer: "admin",
+                    img:require("@/./assets/img/news_single_post_header_1.jpg"),
                     getFullYear: new Date().getFullYear(),
                     getMonth: new Date().getMonth(),
                     getDay: new Date().getDay(),
@@ -53,6 +53,7 @@ export default {
                     title: "Former student discusses success in the fashion industry",
                     href: "#",
                     producer: "admin",
+                    img:require("@/./assets/img/news_single_post_header_2.jpg"),
                     getFullYear: new Date().getFullYear(),
                     getMonth: new Date().getMonth(),
                     getDay: new Date().getDay(),
@@ -62,6 +63,7 @@ export default {
                     title: "How do you best prepare for university?",
                     href: "#",
                     producer: "admin",
+                    img:require("@/./assets/img/news_single_post_header_3.jpg"),
                     getFullYear: new Date().getFullYear(),
                     getMonth: new Date().getMonth(),
                     getDay: new Date().getDay(),
@@ -72,7 +74,7 @@ export default {
     },
     mounted() {
         state.LastPosts=this.posts;
-        console.log(state.LastPosts);
+        //console.log(state.LastPosts);
     },
     components: { LogoPage }
 }
@@ -93,7 +95,6 @@ export default {
         div{
             padding: 3px 0;
             background-color: white;
-            
         }
     }
     .title-card{
