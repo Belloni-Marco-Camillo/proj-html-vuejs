@@ -1,16 +1,19 @@
 <template>
-    <div id="LowHeader" class="d-flex justify-content-between align-items-center">
-        <div>
-            <img src="./../../assets/img/university_logo.png">
-        </div>
+    <div id="LowHeader">
+        <div class="justify-content-between container">
+            <div>
+                <img src="./../../assets/img/university_logo.png">
+            </div>
 
-        <div class="d-flex">
-            <div 
-            v-for="(item, index) in menuItems" 
-            :key="index">
-            <div class="mx-3">{{item.item}}</div>
+            <div class="d-flex">
+                <div 
+                v-for="(item, index) in menuItems" 
+                :key="index">
+                <div class="mx-3">{{item.item}}</div>
+                </div>
             </div>
         </div>
+        
         
 
     </div>
@@ -64,9 +67,14 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 #LowHeader{
     height: 90px;
+    div{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
     img{
         height: 50px;
     }
