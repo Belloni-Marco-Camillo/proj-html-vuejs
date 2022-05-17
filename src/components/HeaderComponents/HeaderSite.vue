@@ -1,9 +1,9 @@
 <template>
     <header>
-        <h1>il mio header</h1>
+
         <UpHeader/>
+
         <LowHeader/>
-        
         
     </header>
 </template>

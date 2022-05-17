@@ -1,5 +1,5 @@
 <template>
-    <div id="UpFooter">
+    <div id="UpFooter" class="d-flex">
         <div class="container-footer d-flex justify-content-around col-8 pt-5">
 
             <div class="text-start">
@@ -74,11 +74,38 @@
                     </div>
                 </div>
 
+                
+
             </div>
         </div>
 
-        <div class="col-4">
-
+        <div class="col-2 offset-1 pt-5">
+            <h3>UPCOMING EVENTS</h3>
+            <div class="d-flex">
+                <div class="date-events col-2">
+                    <p>fri</p>
+                    <p>27</p>
+                </div>
+                <div class="ditails-events text-start offset-1">
+                    <h4>Business Seminar</h4>
+                    <p>July 1, 2019 @ 8:00 am, - July 1, 2021 @ 5:00 pm</p>
+                    <p>United State</p>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex">
+                <div class="date-events col-2">
+                    <p>fri</p>
+                    <p>27</p>
+                </div>
+                <div class="ditails-events text-start offset-1">
+                    <h4>Polictics Seminar</h4>
+                    <p>November 6, 2019 @ 8:00 am, - November 6, 2021 @ 5:00 pm</p>
+                    <p>United Kingdom</p>
+                </div>
+            </div>
+            <hr>
+            <h5 class="text-start"><a href="#">Vuew More...</a></h5>
         </div>
         
         
@@ -185,6 +212,15 @@ export default {
                 href:"#"
                 },
             ],
+            list:[{
+                title: 'titolo',
+                items:[
+                    {oggetto:'primo'},
+                    {oggetto:'secondo'
+                }
+                ]
+            }
+            ]
         };
     },
     mounted() {
@@ -195,21 +231,5 @@ export default {
 </script>
 
 <style lang="scss">
-#UpFooter{
-    height: 40vh;
-    background-image: url(./../../assets/img/university_ft_bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    .container-footer{
-        height: 100%;
-    }
-    h3{
-        padding: 10px 0;
-    }
-    a{
-        text-decoration: none;
-        color: #2c3e50;
-    }
-}
+@import "@/assets/scss/StyleFooter.scss";
 </style>

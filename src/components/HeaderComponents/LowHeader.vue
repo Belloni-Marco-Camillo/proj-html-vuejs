@@ -9,7 +9,9 @@
                 <div 
                 v-for="(item, index) in menuItems" 
                 :key="index">
-                <div class="mx-3">{{item.item}}</div>
+                <div v-if="item.new !== false" class="mx-3 new-header-news">{{item.item}}</div>
+                <div v-else-if="item.applay !== false" class="mx-3 new-header-applay">{{item.item}}</div>
+                <div v-else class="mx-3">{{item.item}}</div>
                 </div>
             </div>
         </div>
@@ -28,37 +30,44 @@ export default {
                 {
                     item: "home",
                     href: "#",
-                    new: false,
+                    new: true,
+                    applay:false
                 },
                 {
                     item: "about",
                     href: "#",
                     new: false,
+                    applay:false
                 },
                 {
                     item: "courses",
                     href: "#",
                     new: false,
+                    applay:false
                 },
                 {
                     item: "events",
                     href: "#",
                     new: false,
+                    applay:false
                 },
                 {
                     item: "facilities",
                     href: "#",
                     new: false,
+                    applay:false
                 },
                 {
                     item: "news",
                     href: "#",
                     new: false,
+                    applay:false
                 },
                 {
                     item: "admission",
                     href: "#",
                     new: false,
+                    applay:true
                 },
             ]
         };
@@ -68,15 +77,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#LowHeader{
-    height: 90px;
-    div{
-        height: 100%;
-        display: flex;
-        align-items: center;
-    }
-    img{
-        height: 50px;
-    }
-}
+@import "@/assets/scss/StyleHeader.scss";
 </style>

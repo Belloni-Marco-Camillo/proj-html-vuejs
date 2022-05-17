@@ -77,19 +77,5 @@ export default {
 </script>
 
 <style lang="scss">
-
-#UpHeader{
-    .container-upheader{
-        height: 100%;
-    }
-    height: 36px;
-    background-color: #ffab0b;
-    a{
-        text-decoration: none;
-        color: white;
-    }
-    img{
-        height: 20px;
-    }
-}
+@import "@/assets/scss/StyleHeader.scss";
 </style>

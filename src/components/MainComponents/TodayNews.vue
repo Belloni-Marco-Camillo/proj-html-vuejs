@@ -1,7 +1,7 @@
 <template>
     <div id="TodayNews">
         <LogoPage/>
-        <div class="container pb-5">
+        <div class="container pb-5 text-center">
             <h2>Today’s Univeristy News</h2>
             <p>Covering Topics From Classes To Politics And Student Organization Events.</p>
             <hr>
@@ -80,35 +80,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-
-#TodayNews{
-    background-color: #e6e6e6;
-    hr{
-        color: #ffab0b;
-        height: 3px;
-        width: 200px;
-        margin: 20px auto;
-    }
-    .news-card{
-        
-        div{
-            padding: 3px 0;
-            background-color: white;
-        }
-    }
-    .title-card{
-        strong{
-            color: #ffab0b;
-        }
-        background-color: white;
-    }
-    .pruducer{
-        color: #ffab0b;
-    }
-    .readMore{
-        color: #ffab0b;
-    }
-    
-}
+<style lang="scss">
+@import "@/assets/scss/StyleMain.scss";
 </style>

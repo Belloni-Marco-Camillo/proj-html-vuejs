@@ -22,26 +22,5 @@ export default {
 </script>
 
 <style lang="scss">
-#HeroSession{
-    height: 80vh;
-    background-image: url(./../../assets/img/home_main_slider_bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: white;
-    button{
-        text-transform: uppercase;
-        margin: 0 10px 0 10px;
-        padding: 10px 20px 10px 20px;
-        color: white;
-        
-    }
-    .find{
-        
-        background-color: #ffab0b;
-    }
-    .apply{
-        background-color: #77e6fe;
-    }
-}
+@import "@/assets/scss/StyleMain.scss";
 </style>

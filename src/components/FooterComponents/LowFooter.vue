@@ -51,18 +51,5 @@ export default {
 </script>
 
 <style lang="scss">
-#LowFooter{
-    height: 75px;
-    .contain-lowfooter{
-        height: 100%;
-        width: 93%;
-        margin: 0 auto;
-    }
-    img{
-        height: 15px;
-    }
-    span{
-       color: #ffab0b; 
-    }
-}
+@import "@/assets/scss/StyleFooter.scss";
 </style>

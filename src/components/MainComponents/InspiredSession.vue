@@ -1,7 +1,7 @@
 <template>
-    <div id="InpiredSession" class="container mt-5 mb-5">
+    <div id="InpiredSession" class="container mb-5">
         <LogoPage/>
-        <div class="headertext">
+        <div class="headertext text-center">
             <h2>Inspired By Excellence & Innovation</h2>
             <p>We Offer A Wide Range Of High Quality Of Teaching And Extra-Curricular Activities.</p>
             <hr>
@@ -39,16 +39,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-
-.headertext{
-    hr{
-        color: #ffab0b;
-        height: 3px;
-        width: 150px;
-        margin: 0 auto;
-    }
-    
-}
-
+<style lang="scss">
+@import "@/assets/scss/StyleMain.scss";
 </style>

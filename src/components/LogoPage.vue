@@ -13,8 +13,10 @@ export default {
 
 
 <style lang="scss" scoped>
- img{
+#LogoPage{
+    img{
      height: 63px;
      width: 73px;
- }
+    }
+}
 </style>
