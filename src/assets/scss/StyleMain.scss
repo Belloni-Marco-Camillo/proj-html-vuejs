@@ -4,6 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     color: white;
     button {
         text-transform: uppercase;
@@ -65,7 +66,7 @@
 
 #CtaImg {
     .collonna {
-        height: 600px;
+        height: 800px;
         overflow: hidden;
         padding: 0;
         .courses {
